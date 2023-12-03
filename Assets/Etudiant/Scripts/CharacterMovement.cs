@@ -20,7 +20,6 @@ public class CharacterMovement : MonoBehaviour
 
     private void Update() {
         Vector3 movement = ( _movementX + _movementZ ).normalized;
-        Debug.Log(movement);
 
         _characterController.Move( Physics.gravity * Time.deltaTime );
         _characterController.Move( movement * speed * Time.deltaTime );
